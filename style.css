@@ -831,111 +831,71 @@ font-weight: 500;
     text-align: center;
 }
 
-/* Mobile view styles */
+/* General styles for #home section */
+#home {
+    padding: 70px 30px;
+    background: #2b5876;
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    text-align: center; /* Center-aligns text for desktop */
+}
+
+#home .home-row {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Spacing between image and text */
+}
+
+#home .home-row img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+#home .home-row .home-content {
+    color: #fff; /* Ensure text color is white for visibility */
+}
+
+#home .home-row .home-content h1 {
+    font-size: 36px; /* Desktop font size */
+    margin: 0;
+}
+
+#home .home-row .home-content p {
+    font-size: 18px; /* Desktop font size */
+    margin-top: 10px;
+}
+
+/* Mobile view adjustments */
 @media (max-width: 768px) {
-    /* General adjustments for sections */
-    #about {
-        padding: 50px 20px;
-    }
-
-    #about .about-col {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #about .about-col .img-col {
-        flex-basis: 100%;
-        text-align: center; /* Center-aligns the image */
-    }
-
-    #about .about-col .info-col {
-        flex-basis: 100%;
-    }
-
-    #fact {
-        padding: 40px 20px;
-    }
-
-    #fact .fact-row {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
-
-    #skill {
-        padding: 50px 20px;
-    }
-
-    #skill .skill-row {
-        margin-top: 20px;
-        grid-gap: 15px;
-    }
-
-    #education {
-        padding: 50px 20px;
-    }
-
-    #education .edu-row {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    #portfolio {
-        padding: 50px 20px;
-    }
-
-    #portfolio .port-row {
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
-
-    #portfolio .port-row .port-item {
-        width: 100%;
-        height: auto;
-    }
-
-    #services {
-        padding: 50px 20px;
-    }
-
-    #services .service-row {
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
-
-    /* Fix for #home section */
     #home {
-        padding: 50px 20px;
-        text-align: center; /* Center-aligns the text */
+        padding: 50px 20px; /* Reduced padding for mobile */
+        text-align: center; /* Center-align text for mobile */
     }
 
     #home .home-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        flex-direction: column; /* Stack items vertically in mobile view */
+        gap: 20px; /* Spacing between image and text */
     }
 
     #home .home-row img {
-        width: 100%;
-        height: auto;
-        display: block;
+        width: 100%; /* Ensure image takes full width */
+        height: auto; /* Maintain aspect ratio */
         border-radius: 15px;
         object-fit: cover;
     }
 
     #home .home-row .home-content {
         margin-top: 20px;
-        color: #fff; /* Ensure text is visible */
     }
 
     #home .home-row .home-content h1 {
         font-size: 24px; /* Adjust font size for mobile */
-        margin: 0;
     }
 
     #home .home-row .home-content p {
         font-size: 16px; /* Adjust font size for mobile */
-        margin-top: 10px;
     }
 }
 
