@@ -845,6 +845,7 @@ font-weight: 500;
 
     #about .about-col .img-col {
         flex-basis: 100%;
+        text-align: center; /* Center-aligns the image */
     }
 
     #about .about-col .info-col {
@@ -901,17 +902,40 @@ font-weight: 500;
         grid-gap: 20px;
     }
 
-    /* Fix for #home .home-row img */
+    /* Fix for #home section */
+    #home {
+        padding: 50px 20px;
+        text-align: center; /* Center-aligns the text */
+    }
+
     #home .home-row {
-        overflow: hidden; /* Prevents overflow of child elements */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     #home .home-row img {
         width: 100%;
         height: auto;
         display: block;
-        border-radius: 15px; /* Ensures border radius is visible */
-        object-fit: cover; /* Adjusts how the image fits within its container */
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    #home .home-row .home-content {
+        margin-top: 20px;
+        color: #fff; /* Ensure text is visible */
+    }
+
+    #home .home-row .home-content h1 {
+        font-size: 24px; /* Adjust font size for mobile */
+        margin: 0;
+    }
+
+    #home .home-row .home-content p {
+        font-size: 16px; /* Adjust font size for mobile */
+        margin-top: 10px;
     }
 }
 
