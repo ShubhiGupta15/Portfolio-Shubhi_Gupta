@@ -442,15 +442,14 @@ box-shadow: none;
     background: #2b5876;
     background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
     background: linear-gradient(to right, #4e4376, #2b5876);
-
 }
 
 #skill .skill-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    grid-gap: 10px;
     margin-top: 30px;
-    margin-left: -16px;
+    margin-left: 0; /* Adjust margin if needed */
 }
 
 #skill .skill-row .skill-box {
@@ -495,6 +494,7 @@ box-shadow: none;
     background-color: var(--themeColor);
     border-radius: 20px;
 }
+
 
 
 #education {
@@ -829,6 +829,76 @@ font-weight: 500;
     color: var(--bgColor);
     transition: 0.7s; 
     text-align: center;
+}
+
+/* General styles for smaller screens */
+@media (max-width: 768px) {
+    #about {
+        padding: 50px 20px;
+    }
+
+    #about .about-col {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #about .about-col .img-col {
+        flex-basis: 100%;
+    }
+
+    #about .about-col .info-col {
+        flex-basis: 100%;
+    }
+
+    #fact {
+        padding: 40px 20px;
+    }
+
+    #fact .fact-row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    #skill {
+        padding: 50px 20px;
+    }
+
+    #skill .skill-row {
+        margin-top: 20px;
+        grid-gap: 15px;
+    }
+
+    #education {
+        padding: 50px 20px;
+    }
+
+    #education .edu-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #portfolio {
+        padding: 50px 20px;
+    }
+
+    #portfolio .port-row {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    #portfolio .port-row .port-item {
+        width: 100%;
+        height: auto;
+    }
+
+    #services {
+        padding: 50px 20px;
+    }
+
+    #services .service-row {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
 }
 
 
