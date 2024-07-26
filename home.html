@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title> Personal Portfolio Website </title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class ="profile">
+            <img src="img/moti image.jpeg" alt="">
+            <h1>Shubhi Gupta</h1>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/shubhigupta15/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/ShubhiGupta15"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a></1i>
+                <li><a href="#about"><i class="fa-solid fa-user"></i>About</a></li>
+                <li><a href="#skill"><i class="fa-solid fa-bars-progress"></i> Skills</a></li>
+                <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Background</a></li>
+                <li><a href="#portfolio"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+                <li><a href="#services"><i class="fa-solid fa-award"></i> Certifications</a></li>
+            </ul>
+        </nav>
+<!---FOOTERm-->
+
+<div class="footer">
+    <p>&copy; Copyright <span id="copyright-year"></span> All rights reserved. <br> Designed by <a href="#">Shubhi Gupta!</a></p>
+</div>
+
+   
+          <script>
+            const currentYear = new Date().getFullYear();
+            document.getElementById("copyright-year").textContent = currentYear;
+          </script>
+        
+    </header>
+<i class="fa-solid fa-bars" id="MenuBtn"></i>
+<main>
+    <section id="home">
+        <div class="home-row">
+            <img src="img/cd6b3bffff1f40e74b4e495b4a239196.jpg" alt="">
+            <h1>Hi, this is <br>Shubhi Gupta<span>.</span></h1>
+            <p>I'm <span id="auto-input"></span></p><br>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class ="sub-heading">About Me</h1>
+        <div class="divider"></div>
+        <p class="sub-para">hi</p>
+        <!-- <div class="about-col"></div>
+            <div class="img-col">
+                <img src="/Users/shubhigupta/Documents/Portfolio/Portifolio-Shubhi-Gupta/img/pic13.2.jpg" alt="">
+            </div>
+            <div class="info-col">
+                <h2>Front-End</h2>
+                <p>hiiiiiiiiiiiiii</p>
+                <div class="icon-list-col">
+                    <div class="icon-list">
+                        <ul>
+                            <li><i class="fa-solid fa-angles-right"></i><strong>Website:</strong> <span>ww.ShanuPortfolio.xyz</span></li>
+                            <li><i class="fa-solid fa-angles-right"></i><strong>Phone:</strong> <span>+91 9898 653 265</span></li> 
+                            <li><i class="fa-solid fa-angles-right"></i><strong>Email: </strong> <span>shanu@mail.com</span></li>
+                        </ul>
+                    </div>
+                    <div class="icon-list">
+                        <ul>
+                            <li><i class="fa-solid fa-angles-right"></i><strong>Degree:</strong> <span>Master</span></11>
+                            <li><i class="fa-solid fa-angles-right"></i><strong>Date of Birth:</strong> <span>03-NOV-1995</span></li> 
+                            <li><i class="fa-solid fa-angles-right"></i><strong>City:</strong> <span>Bangalore, India</span></1i>
+                        </ul>
+                    </div>
+                </div>
+        </div> -->
+        </div>
+    </section>
+   
+    <section id="fact">
+        <h1 class="sub-heading">Facts</h1>
+    
+        <div class="divider "></div>
+        <p class="sub-para">A Numerical Showcase of Professional Growth</p>
+        <div class="fact-row">
+
+            <div class="fact-box">
+
+                <i class="fa-solid fa-file-code"></i>
+
+                <strong>19</strong>
+
+                <p>Projects</p>
+
+            </div>
+
+            <div class="fact-box">
+
+                <i class="fa-solid fa-code-commit"></i>
+
+                <strong>150</strong>
+
+                <p>Commits</p>
+
+            </div>
+
+            <div class="fact-box">
+
+                <i class="fa-solid fa-user"></i>
+
+                <strong>2+</strong>
+
+                <p>Experience(years)</p>
+            </div>
+
+            <div class="fact-box">
+
+                <i class="fa-solid fa-users"></i>
+
+                <strong>3</strong>
+
+                <p>Happy Clients</p>
+            </div>
+
+            <div class="fact-box">
+
+                <i class="fa-solid fa-certificate"></i>
+
+                <strong>6</strong>
+
+                <p>Certifications</p>
+
+            </div>
+
+           
+
+            <div class="fact-box">
+
+                <i class="fa-solid fa-award"></i>
+
+                <strong>3</strong>
+
+                <p>Awards and Honours</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skill">
+        <h1 class="sub-heading">Skills</h1>
+        <div class="divider"></div>
+    
+        <div class="skill-row">
+            <!-- Skill Box 1 -->
+            <div class="skill-box">
+                <h3>Programming Languages</h3>
+                <div class="skill-info">
+                    <span class="sp-box">Python</span>
+                    <span class="sp-box">SQL</span>
+                    <span class="sp-box">C</span>
+                    <span class="sp-box">C++</span>
+                </div>
+            </div>
+    
+            <!-- Skill Box 2 -->
+            <div class="skill-box">
+                <h3>Tools</h3>
+                <div class="skill-info">
+                    <span class="sp-box">Microsoft Excel</span>
+                    <span class="sp-box">Tableau</span>
+                    <span class="sp-box">PowerBI</span>
+                    <span class="sp-box">Google Data Studio</span>
+                    <span class="sp-box">Git</span>
+                    <span class="sp-box">Jira</span>
+                    <span class="sp-box">Visual Studio Code</span>
+                    <span class="sp-box">Google Cloud Platform</span>
+                </div>
+            </div>
+    
+            <!-- Skill Box 3 -->
+            <div class="skill-box">
+                <h3>Libraries</h3>
+                <div class="skill-info">
+                    <span class="sp-box">Pandas</span>
+                    <span class="sp-box">NumPy</span>
+                    <span class="sp-box">Scikit-learn</span>
+                    <span class="sp-box">Matplotlib</span>
+                    <span class="sp-box">Seaborn</span>
+                    <span class="sp-box">TensorFlow</span> 
+                </div>
+            </div>
+    
+            <!-- Skill Box 4 -->
+            <div class="skill-box">
+                <h3>Other Skills</h3>
+                <div class="skill-info">
+                    <span class="sp-box">Time Management</span>
+                    <span class="sp-box">Team Collaboration</span>
+                    <span class="sp-box">Internet Research Skills</span>
+                    <span class="sp-box">Data Integrity</span>
+                    <span class="sp-box">Data Quality Management</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="education">
+        <h1 class="sub-heading">Journey</h1>
+        <div class="divider"></div>
+
+        <div class="edu-row">
+            <div class="edu-cols">
+                <h2>Education</h2>
+                <div class="my-info">
+                    <h3>University of Michigan-Dearborn</h3>
+                    <p>Masters of Science in Data Science</p>
+                    <p>Dearborn, MI, United States</p>
+                    <span class="sp-box">September 2024-May 2026</span>
+                    <ul>
+                        <li>Coursework: </li>
+                        <li>Grade:</li>
+                    </ul>
+                </div>
+
+                <div class="my-info">
+                    <h3>SRM UNIVERSITY</h3>
+                    <p>Bachelors of Technology in Electronics and Communication</p>
+                    <p>Chennai, India</p>
+                    <span class="sp-box">July 2018-May 2022</span>
+                    <ul>
+                        <li>Coursework: Programming for Problem solving, Advanced Calculus and Complex Analysis, Pattern Recognition and Neural Networks, Probability and Stochastic Process, Digital Image and Video Processing</li>
+                        <li>Grade: 9.64/10</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="edu-cols">
+                <h2>Professional Experience</h2>
+                <div class="pro-exp">
+                    <h3>TheMathCompany</h3>
+                    <p>Data Analyst</p>
+                    <p>Bangalore , India</p>
+                    <span class="sp-box">June 2022-April 2024</span>
+                    <ul>
+                        <li>Optimized operations by 60% using advanced Tableau to visualize complex workflows, showcasing expertise in data analytics</li>
+                        <li>Implemented a time series forecasting model significantly improving accuracy by 20% and reliability of sales predictions, resulting in increased revenue</li>
+                        <li>Improved efficiency by 30% and accelerated workflow processes for Operations team through Exploratory Data Analysis on raw data and by connecting insights to business operations</li>
+                        <li>Successfully led and managed team in overseeing project execution and achieving deliverables, demonstrating strong organizational and leadership skills</li>
+                    </ul>
+                </div>
+
+                <div class="pro-exp">
+                    <h3>TheMathCompany</h3>
+                    <p>Full Stack Intern</p>
+                    <p>Bangalore , India</p>
+                    <span class="sp-box">January 2022-May 2022</span>
+                    <ul>
+                        <li>Built a recommendation engine to help customers in selecting the perfect vehicle based on their preferences</li>
+                        <li>Mentored team members to acquire essential project skills, ensuring timely and accurate deliverables</li>
+                    </ul>
+                </div> 
+                <div class="pro-exp">
+                    <h3>HighRadius</h3>
+                    <p>Product Intern</p>
+                    <p>Bhubaneswar , India</p>
+                    <span class="sp-box">August 2021-January 2022</span>
+                    <ul>
+                        <li>Developed a dynamic and responsive note taking application using React.js, providing users with an intuitive interface to create and customize their notes effortlessly</li>
+                        <li>Built an advanced chatbot utilizing Natural Language Processing (NLP) to enhance user interactions and provide seamless customer support on a web-based platform for a banking company</li>
+                    </ul>
+                </div> 
+                <div class="pro-exp">
+                    <h3>Team 4 Progress Technologies</h3>
+                    <p>AI/ML Developer</p>
+                    <p>Bangalore , India</p>
+                    <span class="sp-box">June 2021-July 2021</span>
+                    <ul>
+                        <li>Developed a resume parser that increased recruitment efficiency by 30% through automated keyword-based searches</li>
+                        <li>Gained hands-on experience in Natural Language Processing and Machine Learning, learning to manage and execute a complete project from inception to completion</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section id="portfolio">
+        <h1 class="sub-heading">Portfolio</h1>
+        <div class="divider"></div>
+        <p class="sub-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor cumque minus neque ipsum, fuga autem tempora</p>
+        <div class="port-row"> 
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae blanditiis, ad sapiente corrupti quod.</p> 
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+                <div class="port-item">
+                    <div class="port-img">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="port-info">
+                        <h4>Web Design</h4>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae blanditiis, ad sapiente corrupti quod.</span> 
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                    <div class="port-item">
+                        <div class="port-img">
+                            <img src="img/3.jpg" alt="">
+                        </div>
+                        <div class="port-info">
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae blanditiis, ad sapiente corrupti quod.</p> 
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                        <div class="port-item">
+                            <div class="port-img">
+                                <img src="img/4.jpg" alt="">
+                            </div>
+                            <div class="port-info">
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae blanditiis, ad sapiente corrupti quod.</p> 
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+
+                            <div class="port-item">
+                                <div class="port-img">
+                                    <img src="img/5.jpg" alt="">
+                                </div>
+                                <div class="port-info">
+                                    <h4>Web Design</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae blanditiis, ad sapiente corrupti quod.</p> 
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+
+                                <div class="port-item">
+                                    <div class="port-img">
+                                        <img src="img/6.jpg" alt="">
+                                    </div>
+                                    <div class="port-info">
+                                        <h4>Web Design</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae blanditiis, ad sapiente corrupti quod.</p> 
+                                        <a href="https://github.com/ShubhiGupta15"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="portfolio">
+        <h1 class="sub-heading">Projects</h1>
+        <div class="divider"></div>
+        <div class="port-row"> 
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/260075062-ebb626d8-4208-4551-a503-510c525821fe.PNG" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Covikit Application using Machine Learning Algorithms</h4>
+                    <a href="https://github.com/ShubhiGupta15/Covikit-Application"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>Covikit web application provides online COVID-19 testing using Artificial Neural Networks (ANN) and Exploratory Data Analysis. Trained on the UN COVID-19 dataset from Kaggle, it employs multiple machine learning and deep learning algorithms, with a Multi-layered Perceptron achieving 97.7% accuracy. The app is deployed on Streamlit</p>
+                </div>
+            </div>
+    
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/266846985-c10704c0-374b-4dcb-b1b8-e4bf794bf6cd.PNG" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Time Series Forecasting using ARIMA and SARIMA</h4>
+                    <a href="https://github.com/ShubhiGupta15/Time-Series-Forecasting"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>This model forecasted the monthly sales of a champagne company for the next two years. It utilized methods such as ARIMA and SARIMA to accurately predict future sales trends. The model's performance was evaluated using metrics like RMSE and MAE to ensure high accuracy</p>
+                </div>
+            </div>
+    
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/Screenshot 2024-07-25 at 4.40.06 PM.png" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>VIN Recommendation System using Tableau</h4>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>
+                        I have built a VIN Recommendation Dashboard using Tableau that helps users analyze vehicle data in real-time and recommends similar vehicles. It features interactive charts, combines data from different sources, and has an easy-to-use interface with customizable search options for accurate recommendations</p>
+                </div>
+            </div>
+
+
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/Auto-Dunning.png" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Payment Date Prediction using Regression Models</h4>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>This is an AI-enabled B2B FinTech application to assist enterprises in predicting payment due dates for invoices. Trained models on historical financial data, achieving 93.3\% accuracy in predicting due dates. The frontend of the web application is designed using HTML and CSS</p>
+                </div>
+            </div>
+    
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/Google-Dialogflow-and-Chatbots-The-Royal-AI-Couple-1.jpg.webp" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Banking ChatBot using DialogFlow</h4>
+                    <a href="https://github.com/ShubhiGupta15/Banking-ChatBot-Using-DialogFlow"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>The banking chatbot assists customers with everyday queries, such as opening a bank account, obtaining account statements, linking PAN-AADHAR cards, locating branches/ATMs checking account balances, loan inquiries etc. It is developed using Natural Language Processing with intents and entities, and built with Google DialogFlow for accurate responses.</p>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/Screenshot 2024-07-25 at 4.17.49 PM.png" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Demand Forecasting Metrics: A PowerBI Dashboard</h4>
+                    <a href="https://github.com/ShubhiGupta15/Banking-ChatBot-Using-DialogFlow"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>The Demand Forecasting Dashboard is designed using PowerBI to help businesses predict future demand for their products. By leveraging advanced machine learning algorithms and interactive visualizations, this dashboard provides actionable insights to optimize inventory management and production planning</p>
+                </div>
+            </div>
+    
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/Intro-to-Threading_Watermarked.95b143d3ba6c.jpg.avif" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Boost Forecasting with Multiprocessing for SARIMA</h4>
+                    <a href="https://github.com/ShubhiGupta15/Boost-Forecasting-with-multiprocessing-for-SARIMA"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>
+                        This project enhances the efficiency of forecasting by implementing multiprocessing for SARIMA models. By parallelizing computations, it significantly reduces the time required for model training and prediction. The approach improves scalability and performance, making it ideal for large datasets and real-time forecasting applications</p>
+                </div>
+            </div>
+    
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/1*pxFCmhRFTighUn88baLcSA.png" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Breast Cancer Detection using Machine Learning Models</h4>
+                    <a href="https://github.com/ShubhiGupta15/ML-BREAST-CANCER-DETECTION-PROJECT"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>This project leverages machine learning to detect breast cancer, using data sourced from Kaggle. By employing various algorithms, the model achieves high accuracy in identifying malignant and benign tumors. Key techniques include data preprocessing, feature selection, and model evaluation to ensure reliable predictions</p>
+                </div>
+            </div>
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/11111111.png" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Study hours prediction using Regression Models</h4>
+                    <a href="https://github.com/ShubhiGupta15/TASK-1-GRIPMARCH21-INTERNSHIP"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>This model predicts the study hours of a student using regression techniques. The model analyzed the relationship between study hours and academic performance, employing various regression algorithms. Among them, the Linear Regression model performed best with an accuracy of 93.6%, providing valuable insights</p>
+                </div>
+            </div>
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/An-Overview-of-Concurrency-in-Python_Watermarked.c54c399ccb32.jpg.avif" alt="">
+                </div>
+                <div class="port-info">
+                    <h4>Multithreading and Multiprocessing using Python</h4>
+                    <a href="https://github.com/ShubhiGupta15/Multi-threading-and-Multi-processing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="port-description">
+                    <p>This project focuses on using multithreading and multiprocessing in Python to make programs run faster and more efficiently. It shows how handling multiple tasks at once can speed up processes, with practical examples and performance comparisons to illustrate the improvements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="services">
+        <h1 class="sub-heading">Licenses & Certifications</h1>
+        <div class="divider"></div>
+        <div class="service-row">
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Skillshop</h4>
+                    <h5>Google</h5>
+                    <p>Issued: February 2024</p>
+                    <p>Skills: Time Series Analysis, Applied Regression Analysis, Python, Data Preprocessing</p>
+                </div> I
+            </div>
+         
+
+       
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Fundamental Premier League-SQL</h4>
+                    <h5>TheMathCompany</h5>
+                    <p>Issued: December 2023</p>
+                    <p>Skills: SQL</p>
+                </div> I
+            </div>
+
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Time Series Analysis and Forecasting</h4>
+                    <h5>Udemy</h5>
+                    <p>Issued: July 2022</p>
+                    <p>Skills: Time Series Analysis, Applied Regression Analysis, Python, Data Preprocessing</p>
+                </div> I
+            </div>
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Data Analytics Consulting</h4>
+                    <h5>KPMG</h5>
+                    <p>Issued: January 2021</p>
+                    <p>Skills: Data Cleaning, Data Insights, Data Quality Assessment</p>
+                </div> I
+            </div>
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Introduction to Data Science</h4>
+                    <h5>IBM</h5>
+                    <p>Issued: July 2020</p>
+                    <p>Skills: Data Analysis, Data Science, Machine Learning, GitHub</p>
+                </div> I
+            </div>
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Programming with Python</h4>
+                    <h5>Internshala</h5>
+                    <p>Issued: May 2020</p>
+                    <p>Skills: Python, Object Oriented Programming, SQL</p>
+                </div> I
+            </div>
+        
+            
+        </div>
+    </section>
+</main>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+ const roles = ['Data Analyst', 'Data Scientist', 'AI/ML Engineer'];
+const typed = new Typed('#auto-input', {
+    strings: roles.map(role => role === 'AI/ML Engineer' ? `an ${role}!` : `a ${role}!`),
+    typeSpeed: 80,
+    backSpeed: 80,
+    backDelay: 100,
+    loop: true,
+});
+
+</script>
+
+<script src = "main.js"></script>
+    
+</body> 
+</html>
