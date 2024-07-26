@@ -831,8 +831,9 @@ font-weight: 500;
     text-align: center;
 }
 
-/* General styles for smaller screens */
+/* Mobile view styles */
 @media (max-width: 768px) {
+    /* General adjustments for sections */
     #about {
         padding: 50px 20px;
     }
@@ -898,6 +899,19 @@ font-weight: 500;
     #services .service-row {
         grid-template-columns: 1fr;
         grid-gap: 20px;
+    }
+
+    /* Fix for #home .home-row img */
+    #home .home-row {
+        overflow: hidden; /* Prevents overflow of child elements */
+    }
+
+    #home .home-row img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 15px; /* Ensures border radius is visible */
+        object-fit: cover; /* Adjusts how the image fits within its container */
     }
 }
 
