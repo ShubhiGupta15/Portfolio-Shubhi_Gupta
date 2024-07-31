@@ -135,9 +135,7 @@ header nav ul li a:hover::after {
     transform-origin: bottom left;
 }
 
-header nav ul li .active i {
-    color: var(--themeColor);
-}
+
 
 header nav ul li a i { 
     margin-right: 10px;
@@ -219,7 +217,47 @@ main{
     }
 }
 
-#home{
+/* Keyframes for gradient animation */
+@keyframes gradientBackground {
+    0% {
+        background: linear-gradient(45deg, #5e6ad6, #ffffff);
+        box-shadow: 0 1px 10px 1px #5e6ad6;
+    }
+    50% {
+        background: linear-gradient(45deg, #ffffff, #5e6ad6);
+        box-shadow: 0 1px 10px 1px #ffffff;
+    }
+    100% {
+        background: linear-gradient(45deg, #5e6ad6, #ffffff);
+        box-shadow: 0 1px 10px 1px #5e6ad6;
+    }
+}
+
+/* Applying the animation to the #home::before element */
+#home::before {
+    content: ""; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.431); 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    animation: gradientBackground 5s infinite;
+    /* Other properties */
+}
+
+#home::after {
+    content: ""; 
+    width: 100%; 
+    height: 50px; /* Adjust this value as needed */
+    background-color: rgba(0, 0, 0, 0.431); 
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    z-index: -1; /* Ensure it stays in the background */
+}
+/* Ensuring the home element is positioned correctly */
+#home {
     height: 100vh;
     width: 100%;
     background-image: url(/Users/shubhigupta/Documents/Portfolio/img/pic12.2.jpg);
@@ -232,22 +270,14 @@ main{
     position: relative;
 }
 
-#home::before {
-    content: ""; 
-    width: 100%; 
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.431); 
-    position: absolute;
-    top: 0; 
-    left: 0;
-}
+/* Other styles for the home-row and its children */
 #home .home-row {
-z-index: 1;
+    z-index: 1;
 }
 
-#home .home-row h1{
+#home .home-row h1 {
     font-size: 60px;
-    color: white;
+    color: var(--iconbgColor);
     font-weight: 600;
     letter-spacing: -1px;
     margin-bottom: 10px;
@@ -255,16 +285,17 @@ z-index: 1;
 }
 
 #home .home-row h1 span {
-color: var(--themeColor);
+    color: var(--themeColor);
 }
 
 #home .home-row p {
-    color:whitesmoke;
+    color: var(--iconbgColor);
     font-size: 30px; 
     font-weight: 500;
 }
+
 #home .home-row p span {
-border-bottom: 4px solid var(--themeColor);
+    border-bottom: 4px solid var(--themeColor);
 }
 
 .btn {
@@ -315,6 +346,7 @@ box-shadow: none;
     color:#fff;
     font-size: 30px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .divider {
@@ -419,7 +451,7 @@ box-shadow: none;
 }
 
 #fact .fact-row .fact-box strong {
-    color: var(--sidebgColour);
+    color: #fff;
     font-size: 30px;
     margin-left: 5px;
     font-weight: 600;
@@ -480,6 +512,7 @@ box-shadow: none;
     font-size: 16px;
     font-weight: 600;
     display: inline-block;
+    margin: 3px;
 }
 
 #skill .skill-row .skill-box .skill-outter-line {
@@ -517,7 +550,7 @@ box-shadow: none;
 }
 
 #education .edu-row .edu-cols h2{
-    color: #add8e6;
+    color: var(--themeColor);
     font-weight: 600;
     font-style: 25px;
     margin: 15px 0;
@@ -580,7 +613,7 @@ box-shadow: none;
     background-color:white;
 }
 #education .edu-row .edu-cols h3 {
-    color: lightblue; 
+    color: var(--themeColor); 
     font-style: 17px; 
     font-weight: bold;
     text-transform: uppercase;
@@ -620,11 +653,11 @@ box-shadow: none;
 #education .edu-row .edu-cols .sp-box {
     padding: 4px 22px;
     background-color: lightblue;
-    color: #5f5252;
+    color: var(--sidebgColour);
     border-radius: 3px;
     font-style: italic;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 15px 0;
     display: inline-block;
 }
