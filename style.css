@@ -341,12 +341,15 @@ box-shadow: none;
     background:#2b5876;
     background: -webkit-linear-gradient(to right,#4e4376, #2b5876);
     background: linear-gradient(to right, #4e4376,#2b5876);
+   
 }
 .sub-heading { 
-    color:#fff;
+    color: #fff;
     font-size: 30px;
     margin-bottom: 10px;
     font-weight: 700;
+    text-align: center; /* Center-aligns the content within the container */
+    margin-bottom: 5px;
 }
 
 .divider {
@@ -354,18 +357,40 @@ box-shadow: none;
     height: 4px;
     background-color: var(--themeColor);
     border-radius: 15px;
+    margin: 0 auto; /* Centers the divider horizontally */
 }
 
 .sub-para{
 
     color: var(--textColor); 
-    font-size: 15px; 
+    font-size: 16px; 
     letter-spacing: 0.4px; 
     font-weight: 500; 
     margin-top: 15px;
     margin-left: 3px;
 }
 
+.sub-para2{
+
+    color: var(--textColor); 
+    font-size: 16px; 
+    letter-spacing: 0.4px; 
+    font-weight: 500; 
+    margin-top: 15px;
+    margin-left: 3px;
+    text-align: center; /* Center-aligns the content within the container */
+    margin-bottom: 20px;
+}
+.sub-para1{
+
+    color: var(--themeColor); 
+    font-size: 20px; 
+    letter-spacing: 0.4px; 
+    font-weight: 500; 
+    margin-top: 15px;
+    margin-left: 3px;
+    font-style: italic;
+}
 #fact .sub-para{
 
     color: var(--textColor); 
@@ -435,7 +460,7 @@ box-shadow: none;
 }
 
 #fact {
-    padding: 50px 30px;
+    padding: 30px 30px;
     background: #2b5876;
     background: -webkit-linear-gradient(to right,#4e4376,#2b5876);
     background: linear-gradient(to right,#4e4376,#2b5876)
@@ -470,7 +495,7 @@ box-shadow: none;
 }
 
 #skill {
-    padding: 70px 30px;
+    padding: 50px 30px;
     background: #2b5876;
     background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
     background: linear-gradient(to right, #4e4376, #2b5876);
@@ -481,7 +506,7 @@ box-shadow: none;
     grid-template-columns: 1fr; /* Change to a single column layout */
     grid-gap: 10px;
     margin-top: 30px;
-    margin-left: 0; /* Adjust margin if needed */
+    margin-left: -15px; /* Adjust margin if needed */
 }
 
 #skill .skill-row .skill-box {
@@ -531,7 +556,7 @@ box-shadow: none;
 
 
 #education {
-    padding: 70px 30px;
+    padding: 50px 30px;
     background: #2b5876;
     background: -webkit-linear-gradient(to right,#4e4376,#2b5876);
     background: linear-gradient(to right,#4e4376,#2b5876);
@@ -714,7 +739,7 @@ font-weight: 500;
 }
 /* Portfolio section styling */
 #portfolio {
-    padding: 70px 30px; 
+    padding: 50px 30px; 
     background: #2b5876;
     background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
     background: linear-gradient(to right, #4e4376, #2b5876);
@@ -815,7 +840,7 @@ font-weight: 500;
 
 
 #services {
-    padding: 70px 30px; 
+    padding: 50px 30px; 
     background: #2b5876;
     background: -webkit-linear-gradient(to right,#4e4376, #2b5876);
     background: linear-gradient(to right, #4e4376,#2b5876);
