@@ -315,24 +315,28 @@ main{
 background: var(--sidebgColour);
 box-shadow: none;
 }
-
-@media only screen and (max-width: 670px) {
-    #home {
-    padding: 30px;
-    }
-    #home .home-row h1 {
-        font-size: 35px; 
-        letter-spacing: 0; 
-        line-height: 50px;
-    }
-    #home .home-row h1 br{
-
-    display: none;
+@media (max-width: 768px) {
+    .home-row {
+        padding: 10px;
     }
 
-    #home .home-row p {
-         font-size: 20px; 
-         font-weight: 400;
+    .home-row img {
+        max-width: 100%; /* Ensure the image takes up full width of its container */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 15px;
+    }
+
+    .home-row h1 {
+        font-size: 20px;
+    }
+
+    .home-row p {
+        font-size: 16px;
+    }
+
+    .home-row .btn {
+        padding: 8px 16px;
+        font-size: 14px;
     }
 }
 
