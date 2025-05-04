@@ -65,6 +65,8 @@ header .profile{
 header .profile img{
     width: 150px;
     border-radius: 50%;
+    height: 150px; /* <-- Add this line */
+    object-fit: cover; /* <-- Add this line to prevent distortion */
     border: 10px solid var(--iconbgColor);
     box-shadow: 0 15px 100px 1px #5e6ad6;
 }
